@@ -1,0 +1,10 @@
+config.tx_extbase {
+  persistence {
+    classes {
+      W4Services\W4OrganizationList\Domain\Model\Organization {
+        mapping {
+        }
+      }
+    }
+  }
+}

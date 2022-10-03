@@ -1,0 +1,38 @@
+plugin.tx_w4organizationlist {
+  view {
+    templateRootPath = {$plugin.tx_w4organizationlist.view.templateRootPath}
+    partialRootPath = {$plugin.tx_w4organizationlist.view.partialRootPath}
+    layoutRootPath = {$plugin.tx_w4organizationlist.view.layoutRootPath}
+  }
+
+  persistence {
+    storagePid = {$plugin.tx_w4organizationlist.persistence.storagePid}
+  }
+
+  settings {
+    thumbnail {
+      maxWidth = {$plugin.tx_w4organizationlist.settings.thumbnail.maxWidth}
+    }
+    defaultRedirectPage = {$communitynet.loginOverviewPageId}
+  }
+
+}
+
+page {
+  # Include stylesheets
+  includeCSS {
+    tx_w4organizationlist = EXT:w4_organization_list/Resources/Public/css/style.css
+  }
+}
+
+[applicationContext = Production*]
+
+  page {
+    # Include stylesheets
+    includeCSS {
+      tx_w4organizationlist = EXT:w4_organization_list/Resources/Public/css/style.min.css
+    }
+  }
+
+[global]
+

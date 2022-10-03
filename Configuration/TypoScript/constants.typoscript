@@ -1,0 +1,23 @@
+plugin.tx_w4organizationlist {
+  
+  view {
+    # cat=plugin.tx_w4organizationlist_industry/file; type=string; label=Path to template root (FE)
+    templateRootPath = EXT:w4_organization_list/Resources/Private/Templates/
+    # cat=plugin.tx_w4organizationlist_industry/file; type=string; label=Path to template partials (FE)
+    partialRootPath = EXT:w4_organization_list/Resources/Private/Partials/
+    # cat=plugin.tx_w4organizationlist_industry/file; type=string; label=Path to template layouts (FE)
+    layoutRootPath = EXT:w4_organization_list/Resources/Private/Layouts/
+  }
+
+  persistence {
+    # cat=plugin.tx_w4organizationlist_club//a; type=string; label=Default storage PID
+    storagePid =
+  }
+
+  settings {
+    thumbnail {
+      maxWidth = 914
+    }
+  }
+
+}

@@ -1,0 +1,7 @@
+.organizations .organization .panel-title a.action {
+  display: inline;
+  padding: 0;
+}
+.organizations .organization .panel-title a.action:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,39 @@
+{
+    "name": "w4services/w4_organization_list",
+    "type": "typo3-cms-extension",
+    "version": "1.0.0",
+    "description": "W4 list of organizations.",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:w4holding/w4_organization_list.git"
+        }
+    ],
+    "authors": [{
+        "name": "W4 Services GmbH",
+        "email": "info@w-4.com",
+        "role": "Developer"
+    }],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "W4Services\\W4OrganizationList\\": "Classes"
+        }
+    },
+    "support": {
+        "issues": "https://w4services.atlassian.net/servicedesk/customer/portal/2"
+    },
+    "replace": {
+        "typo3-ter/w4_organization_list": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/public",
+            "extension-key": "w4_organization_list"
+        }
+    }
+}

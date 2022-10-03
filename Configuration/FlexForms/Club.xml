@@ -1,0 +1,99 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>
+                        LLL:EXT:w4_organization_list/Resources/Private/Language/locallang.xlf:tx_w4organizationlist_domain_model_organization.settings
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.button.create>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:w4_organization_list/Resources/Private/Language/locallang.xlf:tx_w4organizationlist_domain_model_organization.button.create
+                            </label>
+                            <config>
+                                <type>input</type>
+                            </config>
+                        </TCEforms>
+                    </settings.button.create>
+
+                    <switchableControllerActions>
+                        <TCEforms>
+                            <label>Show items:</label>
+                            <onChange>reload</onChange>
+                            <config>
+                            <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">of all users list</numIndex>
+                                        <numIndex index="1">Organization->list;Organization->new;Organization->edit;Organization->create;Organization->update;Organization->delete;</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="0">of current user list</numIndex>
+                                        <numIndex index="1">Organization->myList;Organization->new;Organization->edit;Organization->create;Organization->update;Organization->delete;</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </switchableControllerActions>
+
+                    <!-- Page, where the Form is located -->
+                    <settings.formPid>
+                        <TCEforms>
+                            <label>Form Page ID</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                                <wizards>
+                                    <suggest>
+                                        <type>suggest</type>
+                                        <default>
+                                            <searchWholePhrase>1</searchWholePhrase>
+                                        </default>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.formPid>
+
+                    <!-- Page, where user is redirected to after Form submit -->
+                    <settings.redirectPid>
+                        <TCEforms>
+                            <label>Redirect to Page ID</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                                <wizards>
+                                    <suggest>
+                                        <type>suggest</type>
+                                        <default>
+                                            <searchWholePhrase>1</searchWholePhrase>
+                                        </default>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.redirectPid>
+
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

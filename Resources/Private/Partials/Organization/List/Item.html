@@ -1,0 +1,49 @@
+{namespace w4=W4Services\W4CommunityNet\ViewHelpers}
+<div class="row">
+    <div class="col-md-8">
+        <f:format.html>{record.description}</f:format.html>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    <f:if condition="{record.name}">
+                        <p>{record.name}</p>
+                    </f:if>
+                    <f:if condition="{record.function}">
+                        <p>{record.function}</p>
+                    </f:if>
+                    <f:if condition="{record.street}">
+                        <p>{record.street}</p>
+                    </f:if>
+                    <f:if condition="{record.city}">
+                        <p>{record.zip} {record.city}</p>
+                    </f:if>
+                    <f:if condition="{record.mobile}">
+                       <p><core:icon identifier="ext-w4organizationlist-fax-icon" size="small"/> {record.mobile}</p>
+                    </f:if>
+                    <f:if condition="{record.phone}">
+                        <p><core:icon identifier="ext-w4organizationlist-phone-icon" size="small"/> {record.phone}</p>
+                    </f:if>
+                </p>
+            </div>
+            <div class="col-md-12">
+                <p>
+                    <br/>
+                    <f:link.email email="{record.email}" target="_top"/><br/>
+                    <f:comment><f:format.html><w4 :WebsiteLink string='{record.link}'/></f:format.html>  </f:comment>
+                    {record.link}          
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <f:if condition="{record.images.0}">
+            <figure class="image">
+                <f:image src="{record.images.0.uid}"
+                         alt="{record.images.0.originalResource.title}"
+                         title="{record.title}"
+                         width="{settings.thumbnail.maxWidth}"
+                         treatIdAsReference="1" />
+            </figure>
+        </f:if>
+    </div>
+</div>

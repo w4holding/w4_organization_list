@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	
+	<file source-language="de" datatype="plaintext" original="messages" date="2017-05-10T14:10:51+00:00" product-name="w4_organization_list">
+		<header/>
+		<body>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.checkbox_delete"><source>checkbox_delete</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.settings"><source>Einstellungen</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.button.create"><source>Hinzufügenbuttonbeschriftung</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.fe_cruser"><source>Erstellt durch</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.description"><source>Beschreibung</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.link"><source>Link</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.categories"><source>Kategorien</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization"><source><![CDATA[Verein]]></source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.images"><source>Bilder</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.phone"><source>Telefon</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.mobile"><source>Mobiltelefon</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.function"><source>Funktion</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.city"><source>Stadt</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.zip"><source>PLZ</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.street"><source>Strasse</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.name"><source>Name</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.email"><source>Email</source></trans-unit>
+			<trans-unit id="tx_w4organizationlist_domain_model_organization.title"><source>Titel</source></trans-unit>
+
+            <trans-unit id="categories">
+                <source>Kategorien</source>
+            </trans-unit>
+            <trans-unit id="files">
+                <source>Dateien</source>
+            </trans-unit>
+
+            <trans-unit id="pluginName">
+                <source>Vereinsverzeichnis</source>
+            </trans-unit>
+            <trans-unit id="pluginName.description">
+                <source>Stellt eine Liste von Vereinen im Frontend zusammen.</source>
+            </trans-unit>
+
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.create"><source>Neuen Eintrag erstellen</source></trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.cancel"><source>Abbruch</source></trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.back"><source>Zurück</source></trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.save"><source>Speichern</source></trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.edit"><source>Bearbeiten</source></trans-unit>
+
+            <trans-unit id="forbidden.title"><source>Verweigert!</source></trans-unit>
+            <trans-unit id="forbidden.description"><source>Der Zugriff wurde verweiget, bitte melden Sie sich an und versuchen Sie es erneut.</source></trans-unit>
+            <trans-unit id="successfully.title"><source>Erolgreich gespeichert!</source></trans-unit>
+            <trans-unit id="successfully.description"><source>Ihre Änderungen wurden erfolgreich übernommen.</source></trans-unit>
+            <trans-unit id="deleted.title"><source>Erfolgreich gelöscht!</source></trans-unit>
+            <trans-unit id="deleted.description"><source>Ihr Eintrag wurde erfolgreich entfernt.</source></trans-unit>
+		</body>
+	</file>
+</xliff>

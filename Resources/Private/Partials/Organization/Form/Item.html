@@ -1,0 +1,80 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+    <f:section name="Form">
+        <v:variable.set name="arguments" value="{}"/>
+        <f:if condition="{record.uid}">
+            <v:variable.set name="arguments" value="{record: record}"/>
+        </f:if>
+        <f:form controller="{controller}" action="{action}" object="{record}" id="modify-organization" name="record" class="form-horizontal" arguments="{arguments}">
+            <f:form.validationResults>
+                <f:if condition="{validationResults.flattenedErrors}">
+                    <ul class="errors">
+                        <f:for each="{validationResults.flattenedErrors}" as="errors" key="propertyPath">
+                            <li>{propertyPath}
+                                <ul>
+                                    <f:for each="{errors}" as="error">
+                                        <li>{error.code}: {error}</li>
+                                    </f:for>
+                                </ul>
+                            </li>
+                        </f:for>
+                    </ul>
+                </f:if>
+            </f:form.validationResults>
+            <f:render section="Buttons"/>
+            <f:for each="{
+                0: { section: 'Input:Text', property: 'title', required: 1},
+                1: { section: 'Input:TextArea', property: 'description', required: 1, quill: 1},
+                2: { section: 'Input:Text', property: 'name', required: 1},
+                3: { section: 'Input:Text', property: 'street', required: 1},
+                4: { section: 'Input:Text', property: 'zip', required: 1},
+                5: { section: 'Input:Text', property: 'city', required: 1},
+                6: { section: 'Input:Text', property: 'function'},
+                7: { section: 'Input:Text', property: 'mobile'},
+                8: { section: 'Input:Text', property: 'phone'},
+                9: { section: 'Input:Text', property: 'email', type: 'email', required: 1},
+                10: { section: 'Input:Text', property: 'link'}
+            }" as="arguments">
+                <f:render section="{arguments.section}" arguments="{arguments}" />
+            </f:for>
+            <f:render section="Buttons"/>
+        </f:form>
+    </f:section>
+    <f:section name="Buttons">
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-xs-12 col-sm-10">
+                <div class="btn-group">
+                    <f:link.action action="list" class="btn-u btn btn-u-default">
+                        <f:translate key="tx_w4organizationlist_domain_model_organization.back"/>
+                    </f:link.action>
+                    <f:form.submit class="btn btn-default btn-u" value="{f:translate( key: 'tx_w4organizationlist_domain_model_organization.save')}"/>
+                </div>
+            </div>
+        </div>
+    </f:section>
+    <f:section name="Input:Text">
+        <div class="form-group">
+            <label class="col-xs-12 col-sm-2 control-label" for="{property}"><f:if condition="{required} == 1"><span class="required">*</span></f:if><span class="label-holder">{f:translate( key: 'tx_w4organizationlist_domain_model_organization.{property}')}</span></label>
+            <div class="col-xs-12 col-sm-10">
+                <f:form.textfield id="{property}" property="{property}" class="form-control" required="{required}" type="{f:if( condition: type, then: type, else: 'text')}"/>
+            </div>
+        </div>
+    </f:section>
+    <f:section name="Input:TextArea">
+        <div class="form-group">
+            <label class="col-xs-12 col-sm-2 control-label" for="{property}"><f:if condition="{required} == 1"><span class="required">*</span></f:if><span class="label-holder">{f:translate( key: 'tx_w4organizationlist_domain_model_organization.{property}')}</span></label>
+            <div class="col-xs-12 col-sm-10">
+                <f:if condition="{quill}">
+                    <f:then>
+                        <div class="quill" style="height: 150px">{record.description}</div>
+                        <f:form.textarea id="{property}" property="{property}" class="quill-textarea" additionalAttributes="{required: 'required'}"/>
+                    </f:then>
+                    <f:else>
+                        <f:form.textarea id="{property}" property="{property}" class="form-control" />
+                    </f:else>
+                </f:if>
+            </div>
+        </div>
+    </f:section>
+</div>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-05-10T14:28:43+00:00" product-name="w4_organization_list">
+		<header/>
+		<body>
+			<trans-unit id="fe_cruser.alttitle"><source><![CDATA[w4_organization_list ==> LLL:fe_cruser.alttitle]]></source></trans-unit>
+			<trans-unit id="fe_cruser_id.alttitle"><source><![CDATA[w4_organization_list ==> LLL:fe_cruser_id.alttitle]]></source></trans-unit>
+			<trans-unit id="description.alttitle"><source><![CDATA[w4_organization_list ==> LLL:description.alttitle]]></source></trans-unit>
+			<trans-unit id="link.alttitle"><source><![CDATA[w4_organization_list ==> LLL:link.alttitle]]></source></trans-unit>
+			<trans-unit id="categories.alttitle"><source><![CDATA[w4_organization_list ==> LLL:categories.alttitle]]></source></trans-unit>
+			<trans-unit id="images.alttitle"><source><![CDATA[w4_organization_list ==> LLL:images.alttitle]]></source></trans-unit>
+			<trans-unit id="phone.alttitle"><source><![CDATA[w4_organization_list ==> LLL:phone.alttitle]]></source></trans-unit>
+			<trans-unit id="mobile.alttitle"><source><![CDATA[w4_organization_list ==> LLL:mobile.alttitle]]></source></trans-unit>
+			<trans-unit id="function.alttitle"><source><![CDATA[w4_organization_list ==> LLL:function.alttitle]]></source></trans-unit>
+			<trans-unit id="city.alttitle"><source><![CDATA[w4_organization_list ==> LLL:city.alttitle]]></source></trans-unit>
+			<trans-unit id="zip.alttitle"><source><![CDATA[w4_organization_list ==> LLL:zip.alttitle]]></source></trans-unit>
+			<trans-unit id="street.alttitle"><source><![CDATA[w4_organization_list ==> LLL:street.alttitle]]></source></trans-unit>
+			<trans-unit id="name.alttitle"><source><![CDATA[w4_organization_list ==> LLL:name.alttitle]]></source></trans-unit>
+			<trans-unit id="email.alttitle"><source><![CDATA[w4_organization_list ==> LLL:email.alttitle]]></source></trans-unit>
+			<trans-unit id="desciption.alttitle"><source><![CDATA[w4_organization_list ==> LLL:desciption.alttitle]]></source></trans-unit>
+			<trans-unit id="title.alttitle"><source><![CDATA[w4_organization_list ==> LLL:title.alttitle]]></source></trans-unit>
+                        <trans-unit id="checkbox_delete.alttitle"><source><![CDATA[w4_organization_list ==> LLL:checkbox_delete.alttitle]]></source></trans-unit>
+		</body>
+	</file>
+</xliff>

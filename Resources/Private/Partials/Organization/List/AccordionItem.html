@@ -1,0 +1,37 @@
+<div class="accordion-item organization" data-id="{record.uid}" data-categories="{record.categoryIds}">
+<h2 class="accordion-header" id="heading-{record.uid}">
+  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{record.uid}" aria-expanded="true" aria-controls="collapse-{record.uid}">
+    <f:variable name="titlecolwidth" value="12" />
+    <f:security.ifAuthenticated>
+        <f:if condition="{user.uid} == {record.feCruser.uid}">
+            <f:variable name="titlecolwidth" value="10" />
+        </f:if>
+    </f:security.ifAuthenticated>
+    <div class="col-sm-{titlecolwidth}">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-{record.uid}" href="#collapse-{record.uid}">{record.title}</a>
+    </div>
+    <f:security.ifAuthenticated>
+        <f:if condition="{user.uid} == {record.feCruser.uid}">
+            <div class="col-sm-2 action-icons">
+                <f:link.action action="edit" pageUid="{settings.formPid}" arguments="{record: record.uid}" class="action edit">
+                    <core:icon identifier="ext-w4organizationlist-edit-icon" size="small"/>
+                </f:link.action>
+                <f:if condition="{record.checkboxDelete}">
+                    <f:then></f:then>
+                    <f:else>
+                        <f:link.action action="delete" arguments="{record: record.uid}" class="action delete">
+                            <core:icon identifier="ext-w4organizationlist-delete-icon" size="small"/>
+                        </f:link.action>
+                    </f:else>
+                </f:if>
+            </div>
+        </f:if>
+    </f:security.ifAuthenticated>
+  </button>
+</h2>
+<div id="collapse-{record.uid}" class="accordion-collapse collapse" aria-labelledby="heading-{record.uid}" data-bs-parent="#clubAccordion" aria-expanded="false" >
+  <div class="accordion-body">
+    <f:render partial="Organization/List/Item" arguments="{record:record}"/>
+  </div>
+</div>
+</div>
