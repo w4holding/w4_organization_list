@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:w4_organization_list/Resources/Private/Language/locallang_db.xlf" date="2022-04-06T14:07:28Z" product-name="w4_organization_list">
-		<header/>
-		<body>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization" resname="tx_w4organizationlist_domain_model_organization">
-				<source>Organization</source>
-				<target>Organization</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.title" resname="tx_w4organizationlist_domain_model_organization.title">
-				<source>Title</source>
-				<target>Title</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.description" resname="tx_w4organizationlist_domain_model_organization.description">
-				<source>Description</source>
-				<target>Description</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.link" resname="tx_w4organizationlist_domain_model_organization.link">
-				<source>Link</source>
-				<target>Link</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.email" resname="tx_w4organizationlist_domain_model_organization.email">
-				<source>Email</source>
-				<target>Email</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.name" resname="tx_w4organizationlist_domain_model_organization.name">
-				<source>Name</source>
-				<target>Name</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.street" resname="tx_w4organizationlist_domain_model_organization.street">
-				<source>Street</source>
-				<target>Street</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.zip" resname="tx_w4organizationlist_domain_model_organization.zip">
-				<source>Zip</source>
-				<target>Zip</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.city" resname="tx_w4organizationlist_domain_model_organization.city">
-				<source>City</source>
-				<target>City</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.tx_w4organizationlist_function" resname="tx_w4organizationlist_domain_model_organization.tx_w4organizationlist_function">
-				<source>Function</source>
-				<target>Function</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.mobile" resname="tx_w4organizationlist_domain_model_organization.mobile">
-				<source>Mobile</source>
-				<target>Mobile</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.phone" resname="tx_w4organizationlist_domain_model_organization.phone">
-				<source>Phone</source>
-				<target>Phone</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.checkbox_delete" resname="tx_w4organizationlist_domain_model_organization.checkbox_delete">
-				<source>Checkbox Delete</source>
-				<target>Checkbox Delete</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.images" resname="tx_w4organizationlist_domain_model_organization.images">
-				<source>Images</source>
-				<target>Images</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.fe_cruser" resname="tx_w4organizationlist_domain_model_organization.fe_cruser">
-				<source>Fe Cruser</source>
-				<target>Fe Cruser</target>
-			</trans-unit>
-			<trans-unit id="tx_w4organizationlist_domain_model_organization.categories" resname="tx_w4organizationlist_domain_model_organization.categories">
-				<source>Categories</source>
-				<target>Categories</target>
-			</trans-unit>
-			<trans-unit id="tx_w4_organization_list_club.name" resname="tx_w4_organization_list_club.name">
-				<source>Organization List</source>
-				<target>Organization List</target>
-			</trans-unit>
-			<trans-unit id="tx_w4_organization_list_club.description" resname="tx_w4_organization_list_club.description">
-				<source>Organization List</source>
-				<target>Organization List</target>
-			</trans-unit>
-		</body>
-	</file>
+    <file source-language="en" datatype="plaintext" original="EXT:w4_organization_list/Resources/Private/Language/locallang_db.xlf" date="2022-04-06T14:07:28Z" product-name="w4_organization_list">
+        <header/>
+        <body>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization" resname="tx_w4organizationlist_domain_model_organization">
+                <source>Organization</source>
+                <target>Vereinsverzeichnis</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.title" resname="tx_w4organizationlist_domain_model_organization.title">
+                <source>Title</source>
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.description" resname="tx_w4organizationlist_domain_model_organization.description">
+                <source>Description</source>
+                <target>Beschreibung</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.link" resname="tx_w4organizationlist_domain_model_organization.link">
+                <source>Link</source>
+                <target>Link</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.email" resname="tx_w4organizationlist_domain_model_organization.email">
+                <source>E-mail</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.name" resname="tx_w4organizationlist_domain_model_organization.name">
+                <source>Name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.street" resname="tx_w4organizationlist_domain_model_organization.street">
+                <source>Street</source>
+                <target>Strasse</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.zip" resname="tx_w4organizationlist_domain_model_organization.zip">
+                <source>Zip</source>
+                <target>PLZ</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.city" resname="tx_w4organizationlist_domain_model_organization.city">
+                <source>City</source>
+                <target>Stadt</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.tx_w4organizationlist_function" resname="tx_w4organizationlist_domain_model_organization.tx_w4organizationlist_function">
+                <source>Function</source>
+                <target>Funktion</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.mobile" resname="tx_w4organizationlist_domain_model_organization.mobile">
+                <source>Mobile phone number</source>
+                <target>Mobile</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.phone" resname="tx_w4organizationlist_domain_model_organization.phone">
+                <source>Phone number</source>
+                <target>Telefon</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.checkbox_delete" resname="tx_w4organizationlist_domain_model_organization.checkbox_delete">
+                <source>Delete</source>
+                <target>Löschen</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.images" resname="tx_w4organizationlist_domain_model_organization.images">
+                <source>Images</source>
+                <target>Bilder</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.fe_cruser" resname="tx_w4organizationlist_domain_model_organization.fe_cruser">
+                <source>Created by</source>
+                <target>Erstellt durch</target>
+            </trans-unit>
+            <trans-unit id="tx_w4organizationlist_domain_model_organization.categories" resname="tx_w4organizationlist_domain_model_organization.categories">
+                <source>Categories</source>
+                <target>Kategorien</target>
+            </trans-unit>
+            <trans-unit id="tx_w4_organization_list_club.name" resname="tx_w4_organization_list_club.name">
+                <source>Organizations List</source>
+                <target>Vereinsverzeichnis</target>
+            </trans-unit>
+            <trans-unit id="tx_w4_organization_list_club.description" resname="tx_w4_organization_list_club.description">
+                <source>Shows a list of organizations in the frontend.</source>
+                <target>Stellt eine Liste von Vereinen im Frontend zusammen.</target>
+            </trans-unit>
+        </body>
+    </file>
 </xliff>

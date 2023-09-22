@@ -25,12 +25,14 @@ page {
   }
 }
 
-[applicationContext matches "/^(Production)/"]
+[applicationContext matches "/^Production/"]
+
   page {
     # Include stylesheets
     includeCSS {
       tx_w4organizationlist = EXT:w4_organization_list/Resources/Public/css/style.min.css
     }
   }
+
 [global]
 

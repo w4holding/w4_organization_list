@@ -1,110 +1,144 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
 	
-	<file source-language="en" datatype="plaintext" original="messages" date="2023-05-10T14:10:51+00:00" product-name="w4_organization_list">
+	<file source-language="de" datatype="plaintext" original="messages" date="2023-05-10T14:10:51+00:00" product-name="w4_organization_list">
 		<header/>
 		<body>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.checkbox_delete">
                 <source>Delete</source>
+                <target>Löschen</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.settings">
                 <source>Settings</source>
+                <target>Einstellungen</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.button.create">
                 <source>Add</source>
+                <target>Hinzufügen</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.fe_cruser">
                 <source>Created by</source>
+                <target>Erstellt durch</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.description">
                 <source>Description</source>
+                <target>Beschreibung</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.link">
                 <source>Link</source>
+                <target>Link</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.categories">
                 <source>Categories</source>
+                <target>Kategorien</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization">
                 <source><![CDATA[Organization]]></source>
+                <target><![CDATA[Verein]]></target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.images">
                 <source>Images</source>
+                <target>Bilder</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.phone">
                 <source>Phone number</source>
+                <target>Telefon</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.mobile">
                 <source>Mobile phone number</source>
+                <target>Mobiltelefon</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.function">
                 <source>Function</source>
+                <target>Funktion</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.city">
                 <source>City</source>
+                <target>Stadt</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.zip">
                 <source>ZIP</source>
+                <target>PLZ</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.street">
                 <source>Street</source>
+                <target>Strasse</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.name">
                 <source>Name</source>
+                <target>Name</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.email">
                 <source>E-mail</source>
+                <target>Email</target>
             </trans-unit>
 			<trans-unit id="tx_w4organizationlist_domain_model_organization.title">
                 <source>Title</source>
+                <target>Titel</target>
             </trans-unit>
             <trans-unit id="categories">                
                 <source>Categories</source>
+                <target>Kategorien</target>
             </trans-unit>
             <trans-unit id="files">                
                 <source>Files</source>
+                <target>Dateien</target>
             </trans-unit>
             <trans-unit id="pluginName">                
-                <source>Club directory</source>
+                <source>Organizations list</source>
+                <target>Vereinsverzeichnis</target>
             </trans-unit>
             <trans-unit id="pluginName.description">                
                 <source>Shows a list of organizations in the frontend.</source>
+                <target>Stellt eine Liste von Vereinen im Frontend zusammen.</target>
             </trans-unit>
             <trans-unit id="tx_w4organizationlist_domain_model_organization.create">
                 <source>Create new entry</source>
+                <target>Neuen Eintrag erstellen</target>
             </trans-unit>
             <trans-unit id="tx_w4organizationlist_domain_model_organization.cancel">
                 <source>Cancel</source>
+                <target>Abbruch</target>
             </trans-unit>
             <trans-unit id="tx_w4organizationlist_domain_model_organization.back">
                 <source>Back</source>
+                <target>Zurück</target>
             </trans-unit>
             <trans-unit id="tx_w4organizationlist_domain_model_organization.save">
                 <source>Save</source>
+                <target>Speichern</target>
             </trans-unit>
             <trans-unit id="tx_w4organizationlist_domain_model_organization.edit">
                 <source>Edit</source>
+                <target>Bearbeiten</target>
             </trans-unit>
             <trans-unit id="forbidden.title">
                 <source>Forbiden!</source>
+                <target>Verweigert!</target>
             </trans-unit>
             <trans-unit id="forbidden.description">
                 <source>Access was denied, please log in and try again.</source>
+                <target>Der Zugriff wurde verweiget, bitte melden Sie sich an und versuchen Sie es erneut.</target>
             </trans-unit>
             <trans-unit id="successfully.title">
                 <source>Saved successfully!</source>
+                <target>Erolgreich gespeichert!</target>
             </trans-unit>
             <trans-unit id="successfully.description">
                 <source>Your changes have been successfully saved.</source>
+                <target>Ihre Änderungen wurden erfolgreich übernommen.</target>
             </trans-unit>
             <trans-unit id="deleted.title">
                 <source>Deleted successfully</source>
+                <target>Erfolgreich gelöscht!</target>
             </trans-unit>
             <trans-unit id="deleted.description">
                 <source>Your entry has been successfully deleted.</source>
+                <target>Ihr Eintrag wurde erfolgreich entfernt.</target>
             </trans-unit>
             <trans-unit id="all_categories">
                 <source>All categories</source>
+                <target>Alle Kategorien</target>
             </trans-unit>
 		</body>
 	</file>

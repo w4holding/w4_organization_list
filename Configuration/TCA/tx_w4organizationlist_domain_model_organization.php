@@ -17,7 +17,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'title,description,link,email,name,street,zip,city,tx_w4organizationlist_function,mobile,phone,checkbox_delete',
-        'iconfile' => 'EXT:w4_organization_list/Resources/Public/Icons/tx_w4organizationlist_domain_model_organization.gif'
+        'iconfile' => 'EXT:w4_organization_list/Resources/Public/Icons/Organization.png'
     ],
     'types' => [
         '1' => ['showitem' => 'title, description, link, email, name, street, zip, city, tx_w4organizationlist_function, mobile, phone, checkbox_delete, images, fe_cruser, categories, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],

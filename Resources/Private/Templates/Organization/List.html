@@ -1,102 +1,81 @@
 {namespace v=FluidTYPO3\Vhs\ViewHelpers}
-<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-     xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
-    <f:layout name="Default"/>
-    <f:section name="Main">
-        <f:if condition="{feUserId}">
-            <f:then>
-                <div class="subpages-nav">
-                    <ul id="sub-nav" class="nav nav-tabs">
-                        <li>
-                            <f:link.action action="new" pageUid="{settings.formPid}"><span>{header}</span></f:link.action>
-                        </li>
-                    </ul>
-                </div>
-            </f:then>
-            <f:else>
-                <f:render section="Buttons" arguments="{settings}"/>
-                <div id="wrapper" class="subpages-nav events-categories element checkbox" style="margin-bottom: 25px">
-                    <ul class="nav clearfix check-all">
-                        <li>
-                            <input type="checkbox" name="categories-all" id="categories-all" checked="checked" value="all">
-                            <label for="categories-all">Alle</label>
-                        </li>
-                    </ul>
-                    <ul class="nav clearfix">
-                        <f:for each="{categories}" as="category">
-                            <f:if condition="{category}">
-                                <li>
-                                    <input type="checkbox" name="category-{category.uid}" id="category-{category.uid}" checked="checked" value="{category.uid}">
-                                    <label for="category-{category.uid}">{category.title}</label>
-                                </li>
-                            </f:if>
-                        </f:for>
-                    </ul>
-                </div>
-            </f:else>
-        </f:if>
+<f:layout name="Default"/>
+<f:section name="Main">        
+    <div id="clubAccordion-{content.uid}">
+        <f:security.ifAuthenticated>
+            <div class="btn-group mb-5">
+                <f:link.action action="new" class="btn btn-default btn-u">
+                    {f:if( condition: button.create, then: button.create, else: "{f:translate( key: 'tx_w4organizationlist_domain_model_organization.create')}")}
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </f:link.action>
+            </div>
+        </f:security.ifAuthenticated>
+        <div class="form-group form-group-with-shadow mb-5">
+            <div id="wrapper" class="subpages-nav events-categories element checkbox">
+                <ul class="nav clearfix check-all">
+                    <li>
+                        <label for="clubAccordion-{content.uid}-categories-all" class="checkboxcontainer">
+                            <input type="checkbox" name="categories-all" id="clubAccordion-{content.uid}-categories-all" checked="true" value="all" />
+                            <span class="checkmark"></span>
+                            {f:translate( key: 'all_categories')}
+                        </label>
+                    </li>
+                </ul>
+                <ul class="nav clearfix">                           
+                    <f:for each="{categories}" as="category">
+                        <f:if condition="{category}">
+                            <li>
+                                <label for="clubAccordion-{content.uid}-category-{category.uid}" class="checkboxcontainer">
+                                    <input type="checkbox" name="category-{category.uid}" id="clubAccordion-{content.uid}-category-{category.uid}" checked="true" value="{category.uid}" />
+                                    <span class="checkmark"></span>
+                                    {category.title}
+                                </label>
+                            </li>
+                        </f:if>
+                    </f:for>
+                </ul>
+            </div>
+        </div>
         <script>
             /* Organization list checkbox filtering */
-            window.onload = function(){
-                    ( function($) {
-                    var $all = $('.events-categories.element.checkbox input#categories-all'),
-                        $categories = $('.events-categories.element.checkbox input').not('input#categories-all'),
-                        $checkBoxes = $('.events-categories.element.checkbox input');
-
-                    $all.change( function() {
-                        $categories.each( function() {
-                            $(this).prop( 'checked', $all.is(':checked'));
+            window.onload = function() <f:format.raw value="{" />
+                    ( function($) <f:format.raw value="{" />
+                    let all = $('#clubAccordion-{content.uid} input#clubAccordion-{content.uid}-categories-all'),
+                        categories = $('#clubAccordion-{content.uid} input').not('input#clubAccordion-{content.uid}-categories-all'),
+                        checkBoxes = $('#clubAccordion-{content.uid} input');
+                    all.change( function() <f:format.raw value="{" />
+                        categories.each( function() <f:format.raw value="{" />
+                            $(this).prop( 'checked', all.is(':checked'));
                         });
                     });
-
-                    $checkBoxes.change( function( e) {
-                        var categories = (
-                                $all.get(0) === e.target && !$(e.target).is(':checked') || $all.get(0) !== e.target
-                                    ? $categories.filter(':checked')
-                                    : $categories
-                            ).map(function() {
+                    checkBoxes.change( function( e) <f:format.raw value="{" />
+                        let categoriess = (
+                            all.get(0) === e.target && !$(e.target).is(':checked') || all.get(0) !== e.target
+                                ? categories.filter(':checked')
+                                : categories
+                            ).map(function() <f:format.raw value="{" />
                                 return parseInt( $(this).val());
-                            }).toArray(),
-                            $items = $( '.organizations .organization');
-                        if($all.get(0) !== e.target){ $all.prop( 'checked', categories.length === $categories.length); }
-                        $items.each( function() {
-                            if( 0 < $(this).data('categories').filter(function(n){ return -1 < categories.indexOf( n)}).length) {
+                            }).toArray();
+                        if (all.get(0) !== e.target) <f:format.raw value="{" />
+                            all.prop( 'checked', categoriess.length === categories.length);
+                        }
+                        $('#clubAccordion-{content.uid} .organization').each( function() <f:format.raw value="{" />
+                            if( 0 < $(this).data('categories').filter(function(n){ return -1 < categoriess.indexOf(n)}).length) <f:format.raw value="{" />
                                 $(this).show();
-                            } else { $(this).hide(); }
+                            } else <f:format.raw value="{" />
+                                $(this).hide();
+                            }
                         });
                     });
                 })( jQuery);
             }
-
         </script>
-        <div class="accordion organizations" id="clubAccordion">
-             <f:for each="{records}" as="record">
-                <f:render partial="Organization/List/AccordionItem" arguments="{record:record, user: user}"/>
-            </f:for>
-
- 
-
-    
+        <div class="accordion-module scroll-to mb-4">
+            <ul id="my-accordion" class="accordion accordionjs xpp">
+                <f:for each="{records}" as="record">
+                    <f:render partial="Organization/List/AccordionItem" arguments="{record:record, user: user}"/>
+                </f:for>
+            </ul>
         </div>
-    </f:section>
-    <f:section name="Buttons">
-        <div class="btn-group">
-            <f:security.ifAuthenticated>
-                <f:then>
-                    <f:link.action action="new" class="btn btn-default btn-u">
-                        {f:if( condition: button.create, then: button.create, else: "{f:translate( key: 'tx_w4organizationlist_domain_model_organization.create')}")}
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    </f:link.action>
-                </f:then>
-                <f:else>
-                    <v:variable.set name="returnUrl" value="{f:uri.action(action: 'new', absolute: 1)}"/>
-                    <f:link.page pageUid="{f:cObject( typoscriptObjectPath: 'lib.loginPageId')}" class="btn btn-default btn-u" additionalParams="{return_url: returnUrl}">
-                        {f:if( condition: button.create, then: button.create, else: "{f:translate( key: 'tx_w4organizationlist_domain_model_organization.create')}")}
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    </f:link.page>
-                    <v:variable.unset name="returnUrl"/>
-                </f:else>
-            </f:security.ifAuthenticated>
-        </div>
-    </f:section>
-</div>
+    </div>
+</f:section>

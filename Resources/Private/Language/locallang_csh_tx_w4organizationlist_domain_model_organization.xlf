@@ -19,7 +19,7 @@
 			<trans-unit id="email.alttitle"><source><![CDATA[w4_organization_list ==> LLL:email.alttitle]]></source></trans-unit>
 			<trans-unit id="desciption.alttitle"><source><![CDATA[w4_organization_list ==> LLL:desciption.alttitle]]></source></trans-unit>
 			<trans-unit id="title.alttitle"><source><![CDATA[w4_organization_list ==> LLL:title.alttitle]]></source></trans-unit>
-                        <trans-unit id="checkbox_delete.alttitle"><source><![CDATA[w4_organization_list ==> LLL:checkbox_delete.alttitle]]></source></trans-unit>
+            <trans-unit id="checkbox_delete.alttitle"><source><![CDATA[w4_organization_list ==> LLL:checkbox_delete.alttitle]]></source></trans-unit>
 		</body>
 	</file>
 </xliff>

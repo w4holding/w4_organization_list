@@ -4,7 +4,7 @@ defined('TYPO3') || die();
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
     'W4OrganizationList',
     'Club',
-    'Club List'
+    'Organizations List'
 );
 
 $pluginSignature = 'w4organizationlist_club';
