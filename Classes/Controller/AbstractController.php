@@ -124,7 +124,7 @@ class AbstractController extends ActionController {
 
         if( is_null( self::$loggedInFrontendUser)) {
 
-            self::$loggedInFrontendUser = !!$GLOBALS['TSFE']->fe_user
+            self::$loggedInFrontendUser = isset($GLOBALS['TSFE']->fe_user->user[ 'uid'])
                 ? $this->getFrontendUserRepository()->findByUid(
                     $GLOBALS['TSFE']->fe_user->user[ 'uid']
                 )

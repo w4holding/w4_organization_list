@@ -1,45 +1,45 @@
-{namespace w4=W4Services\W4CommunityNet\ViewHelpers}
 <div class="row">
     <div class="col-md-8">
-        <f:format.html>{record.description}</f:format.html>
-        <div class="row">
-            <div class="col-md-12">
-                <p>
-                    <f:if condition="{record.name}">
-                        <p>{record.name}</p>
-                    </f:if>
-                    <f:if condition="{record.function}">
-                        <p>{record.function}</p>
-                    </f:if>
-                    <f:if condition="{record.street}">
-                        <p>{record.street}</p>
-                    </f:if>
-                    <f:if condition="{record.city}">
-                        <p>{record.zip} {record.city}</p>
-                    </f:if>
-                    <f:if condition="{record.mobile}">
-                       <p><core:icon identifier="ext-w4organizationlist-fax-icon" size="small"/> {record.mobile}</p>
-                    </f:if>
-                    <f:if condition="{record.phone}">
-                        <p><core:icon identifier="ext-w4organizationlist-phone-icon" size="small"/> {record.phone}</p>
-                    </f:if>
-                </p>
+        <f:if condition="{record.description}">
+            <div class="w-100 d-inline-block">
+                <f:format.html>{record.description}</f:format.html>
             </div>
-            <div class="col-md-12">
-                <p>
-                    <br/>
-                    <f:link.email email="{record.email}" target="_top"/><br/>
-                    <f:comment><f:format.html><w4 :WebsiteLink string='{record.link}'/></f:format.html>  </f:comment>
-                    {record.link}          
-                </p>
-            </div>
-        </div>
+            <br />
+        </f:if>
+        <p>
+            <f:if condition="{record.name}">
+                <strong>{record.name}</strong><br />
+            </f:if>
+            <f:if condition="{record.function}">
+                {record.function}<br />
+            </f:if>
+        </p>
+        <p>
+            <f:if condition="{record.street}">
+                {record.street}<br />
+            </f:if>
+            <f:if condition="{record.city}">
+                {record.zip} {record.city}<br />
+            </f:if>
+            <f:if condition="{record.mobile}">
+                <a href="tel:{record.mobile}" target="_blank">{record.mobile}</a><br />
+            </f:if>
+            <f:if condition="{record.phone}">
+                <a href="tel:{record.phone}" target="_blank">{record.phone}</a><br />
+            </f:if>
+            <f:if condition="{record.email}">
+                <f:link.email email="{record.email}" target="_blank"/><br />
+            </f:if>
+            <f:if condition="{record.link}">
+                <f:link.typolink parameter="{record.link}" target="_blank" /> 
+            </f:if>                         
+        </p>
     </div>
-    <div class="col-md-4">
-        <f:if condition="{record.images.0}">
+    <div class="col-md-4">        
+        <f:if condition="{record.images}">
             <figure class="image">
-                <f:image src="{record.images.0.uid}"
-                         alt="{record.images.0.originalResource.title}"
+                <f:image image="{record.images}"
+                         alt="{record.title}"
                          title="{record.title}"
                          width="{settings.thumbnail.maxWidth}"
                          treatIdAsReference="1" />
